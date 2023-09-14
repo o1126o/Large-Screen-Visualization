@@ -7,6 +7,7 @@ import * as echarts from 'echarts'
 export const useInitBarChart = () => {
   // 获取渲染的dom容器(获取dom节点)
   const barChart = ref(null)
+  console.log(barChart.value)
   const initBarChart = (parkInfo: ParkResponseType) => {
     const { parkIncome } = parkInfo
     console.log(parkIncome)
